@@ -1,0 +1,39 @@
+{
+  "compilerOptions": {
+    "target": "ES2020",
+    "module": "ESNext",
+    "lib": ["ES2020", "DOM", "DOM.Iterable"],
+    "baseUrl": "./src",
+
+    /* Bundler mode */
+    "moduleResolution": "bundler",
+    "allowImportingTsExtensions": true,
+    "isolatedModules": true,
+    "moduleDetection": "force",
+    "noEmit": true,
+    "jsx": "react-jsx",
+
+    /* Linting */
+    "strict": true,
+    "noUnusedLocals": true,
+    "noUnusedParameters": true,
+    "noFallthroughCasesInSwitch": true,
+
+    /* File Paths */
+    "paths": {
+      "@apis/*": ["./apis/*"],
+      "@assets/*": ["./assets/*"],
+      "@components/*": ["./components/*"],
+      "@components": ["./components/index.ts"],
+      "@constants/*": ["./constants/*"],
+      "@constants": ["./constants/index.ts"],
+      "@pages/*": ["./pages/*"],
+      "@pages": ["./pages/index.ts"],
+      "@layouts/*": ["./layouts/*"],
+      "@layouts": ["./layouts/index.ts"],
+      "@utils/*": ["./utils/*"],
+      "@utils": ["./utils/index.ts"]
+    }
+  },
+  "include": ["src"]
+}
